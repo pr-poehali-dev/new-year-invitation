@@ -85,7 +85,29 @@ const Index = () => {
             </p>
           </div>
 
-          <Card className="p-8 md:p-10 backdrop-blur-sm bg-card/50 border-border/50 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <Card className="p-8 md:p-10 backdrop-blur-sm bg-accent/10 border-accent/30 animate-fade-in" style={{ animationDelay: '0.15s' }}>
+            <div className="text-center space-y-4 mb-8">
+              <div className="inline-block">
+                <Icon name="Drama" size={48} className="text-accent animate-glow" />
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold">
+                Дресс-код: Любимый мем! 😄
+              </h2>
+              <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
+                Придумай костюм на основе своего любимого мема! Чем смешнее и креативнее — тем лучше. 
+                Самый лучший образ получит приз! 🏆
+              </p>
+              <div className="flex flex-wrap justify-center gap-3 pt-2">
+                <span className="px-4 py-2 rounded-full bg-secondary/50 text-sm">🐸 Pepe</span>
+                <span className="px-4 py-2 rounded-full bg-secondary/50 text-sm">🐕 Doge</span>
+                <span className="px-4 py-2 rounded-full bg-secondary/50 text-sm">😎 Chad</span>
+                <span className="px-4 py-2 rounded-full bg-secondary/50 text-sm">🤔 Thinking</span>
+                <span className="px-4 py-2 rounded-full bg-secondary/50 text-sm">💀 Skull</span>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-8 md:p-10 backdrop-blur-sm bg-card/50 border-border/50 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2 text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-semibold flex items-center justify-center gap-3">
@@ -164,7 +186,7 @@ const Index = () => {
             </form>
           </Card>
 
-          <div className="text-center space-y-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="text-center space-y-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <div className="inline-flex items-center gap-2 text-muted-foreground">
               <Icon name="MapPin" size={18} />
               <span className="text-sm">Адрес будет отправлен после подтверждения</span>
